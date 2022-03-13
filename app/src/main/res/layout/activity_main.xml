@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D9F6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="577dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="86dp">
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="285dp"
+            android:layout_height="107dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="CMPE277 - Sarinder Virk ServicesApp - download the PDF files below in the background" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF1" />
+
+        <EditText
+            android:id="@+id/textAddr1"
+            android:layout_width="276dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF2" />
+
+        <EditText
+            android:id="@+id/textAddr2"
+            android:layout_width="275dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="https://hadoop.apache.org/docs/r1.2.1/hdfs_design.pdf" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF3" />
+
+        <EditText
+            android:id="@+id/textAddr3"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF4" />
+
+        <EditText
+            android:id="@+id/textAddr4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/wellarchitected-machine-learning-lens.pdf" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF5" />
+
+        <EditText
+            android:id="@+id/textAddr5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="https://developers.snowflake.com/wp-content/uploads/2020/09/SNO-eBook-7-Reference-Architectures-for-Application-Builders-MachineLearning-DataScience.pdf" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDownload"
+            android:text="Start Download" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="672dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
